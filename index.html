@@ -3,17 +3,21 @@
   <head>
     <meta charset="utf-8" />
     <title>TinDog</title>
-    <!-- Font Aweseome -->
-    <script src="https://kit.fontawesome.com/f29cb7d94e.js" crossorigin="anonymous"></script>
-    <!-- Bootstrap Scripts -->
+
+    <!-- Bootstrap CSS -->
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
       crossorigin="anonymous"
     />
+
+    <!-- Font Aweseome -->
+    <script src="https://kit.fontawesome.com/f29cb7d94e.js" crossorigin="anonymous"></script>
+
     <!-- My Stylesheet -->
     <link rel="stylesheet" href="css/styles.css" />
+
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -25,7 +29,7 @@
       <div class="container-fluid">
         <!-- Nav Bar -->
         <nav class="navbar navbar-expand-lg navbar-dark">
-          <a class="navbar-brand my-navbar-link" href="">sirdicholas</a>
+          <a class="navbar-brand" href="">sirdicholas</a>
           <button
             class="navbar-toggler"
             type="button"
@@ -53,11 +57,12 @@
           </div>
         </nav>
 
+        <!-- Title Area -->
         <div class="row">
           <div class="col-lg-6">
             <h1>Meet new and interesting dogs nearby.</h1>
-            <button type="button" class="btn btn-dark btn-lg"><i class="fab fa-apple"></i> Download</button>
-            <button type="button" class="btn btn-outline-light btn-lg"><i class="fab fa-google-play"></i> Download</button>
+            <button type="button" class="btn btn-dark btn-lg download-btn"><i class="fab fa-apple"></i> Download</button>
+            <button type="button" class="btn btn-outline-light btn-lg download-btn"><i class="fab fa-google-play"></i> Download</button>
           </div>
 
           <div class="col-lg-6">
@@ -67,17 +72,25 @@
       </div>
     </section>
 
-    <!-- Features -->
-
+    <!-- Features Row-->
     <section id="features">
-      <h3>Easy to use.</h3>
-      <p>So easy to use, even your dog could do it.</p>
-
-      <h3>Elite Clientele</h3>
-      <p>We have all the dogs, the greatest dogs.</p>
-
-      <h3>Guaranteed to work.</h3>
-      <p>Find the love of your dog's life or your money back.</p>
+      <div class="row feat-row">
+        <div class="col-lg-4 feat-col">
+          <i class="fas fa-check-circle fa-4x feat-icon"></i>
+          <h3>Easy to use.</h3>
+          <p>So easy to use, even your dog could do it.</p>
+        </div>
+        <div class="col-lg-4 feat-col">
+          <i class="fas fa-bullseye fa-4x feat-icon"></i>
+          <h3>Elite Clientele</h3>
+          <p>We have all the dogs, the greatest dogs.</p>
+        </div>
+        <div class="col-lg-4 feat-col">
+          <i class="fas fa-heart fa-4x feat-icon"></i>
+          <h3>Guaranteed to work.</h3>
+          <p>Find the love of your dog's life or your money back.</p>
+        </div>
+      </div>
     </section>
 
     <!-- Testimonials -->
@@ -143,6 +156,7 @@
     <footer id="footer">
       <p>© Copyright 2018 TinDog</p>
     </footer>
+    <!-- Bootstrap Javascript -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
